@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ワイズシステムサービス | 奈良県桜井市 OA機器・IT・AI導入支援</title>
-<meta name="description" content="奈良県桜井市のワイズシステムサービス。33年の実績で、パソコン・コピー機・ネットワークからAI導入支援まで、中小企業・病院・クリニックのITをワンストップでサポートします。">
+<meta name="description" content="奈良県桜井市のワイズシステムサービス。33年の実績で、パソコン・コピー機・ネットワークからAI導入支援、営業代行まで、中小企業・病院・クリニックをワンストップでサポートします。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -26,10 +26,8 @@
     --maxw: 1180px;
     font-size: 16px;
   }
-
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after {
@@ -39,7 +37,6 @@
       scroll-behavior: auto !important;
     }
   }
-
   body {
     margin: 0;
     background: var(--bg);
@@ -48,7 +45,6 @@
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
   }
-
   h1, h2, h3, h4 {
     font-family: "Shippori Mincho", serif;
     font-weight: 600;
@@ -56,10 +52,8 @@
     color: var(--ink);
     letter-spacing: 0.02em;
   }
-
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
-
   .eyebrow {
     font-family: "Space Mono", monospace;
     font-size: 0.72rem;
@@ -71,20 +65,16 @@
   .eyebrow.ai { color: var(--ai-deep); }
   .eyebrow.on-dark { color: #E3C57A; }
   .eyebrow.ai-on-dark { color: #6FD6CE; }
-
   .wrap {
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 0 28px;
   }
-
   a:focus-visible,
   button:focus-visible {
     outline: 3px solid var(--gold);
     outline-offset: 3px;
   }
-
-  /* ===== Header ===== */
   .site-header {
     position: sticky;
     top: 0;
@@ -138,7 +128,6 @@
     transition: transform 0.25s ease;
   }
   .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
-
   .header-cta {
     display: flex;
     align-items: center;
@@ -152,7 +141,6 @@
     white-space: nowrap;
   }
   .tel-quick span { display: block; font-size: 0.62rem; font-family: "Zen Kaku Gothic New"; color: var(--ink-faint); font-weight: 500; }
-
   .btn {
     display: inline-flex;
     align-items: center;
@@ -194,10 +182,7 @@
     color: #fff;
   }
   .btn-ai-outline:hover { background: rgba(255,255,255,0.12); }
-
   .menu-toggle { display: none; }
-
-  /* ===== Hero ===== */
   .hero {
     position: relative;
     padding: 88px 0 84px;
@@ -227,8 +212,6 @@
     flex-wrap: wrap;
     margin-bottom: 46px;
   }
-
-  /* Timeline signature element */
   .timeline {
     position: relative;
     height: 3px;
@@ -256,7 +239,6 @@
     color: var(--ink-faint);
   }
   .timeline-labels .now { color: var(--gold-deep); font-weight: 700; }
-
   .hero-panel {
     background: var(--ink);
     border-radius: var(--radius);
@@ -300,8 +282,6 @@
     color: #E7E9EF;
   }
   .hero-panel-list li span:last-child { color: #A9B2C4; font-family: "Space Mono", monospace; font-size: 0.78rem; }
-
-  /* ===== Section shell ===== */
   section { padding: 96px 0; }
   .section-head {
     max-width: 640px;
@@ -312,8 +292,6 @@
     margin-top: 14px;
   }
   .section-alt { background: var(--surface-alt); }
-
-  /* ===== Pain points ===== */
   .pain-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -341,8 +319,6 @@
     font-size: 1.25rem;
   }
   .pain-close strong { color: var(--gold-deep); }
-
-  /* ===== Reasons ===== */
   .reasons {
     display: flex;
     flex-direction: column;
@@ -364,8 +340,6 @@
   }
   .reason-row h3 { font-size: 1.15rem; margin-bottom: 8px; }
   .reason-row p { margin: 0; color: var(--ink-soft); max-width: 62ch; }
-
-  /* ===== Services ===== */
   .service-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -386,27 +360,10 @@
   .service-icon { font-size: 1.7rem; margin-bottom: 16px; }
   .service-card h3 { font-size: 1rem; margin-bottom: 8px; font-family: "Zen Kaku Gothic New"; font-weight: 700; }
   .service-card p { margin: 0; font-size: 0.86rem; color: var(--ink-soft); }
-
-  /* ===== Staff ===== */
   .staff-lead {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 56px;
-    align-items: center;
-    margin-bottom: 64px;
-  }
-  .staff-photo-placeholder {
-    aspect-ratio: 4/3;
-    background: var(--ink);
-    border-radius: var(--radius);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255,255,255,0.35);
-    font-family: "Space Mono", monospace;
-    font-size: 0.8rem;
+    max-width: 720px;
+    margin: 0 auto 64px;
     text-align: center;
-    padding: 20px;
   }
   .staff-quote {
     font-family: "Shippori Mincho", serif;
@@ -416,7 +373,6 @@
   }
   .staff-name { font-weight: 700; }
   .staff-role { color: var(--ink-faint); font-size: 0.84rem; }
-
   .team-bar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -434,8 +390,6 @@
   .team-bar-icon { font-size: 1.5rem; line-height: 1; flex-shrink: 0; }
   .team-bar-item h4 { font-size: 0.96rem; margin: 0 0 6px; font-family: "Zen Kaku Gothic New"; font-weight: 700; }
   .team-bar-item p { margin: 0; font-size: 0.84rem; color: var(--ink-soft); }
-
-  /* ===== AI section (signature contrast block) ===== */
   .ai-section {
     background: var(--ai-bg);
     color: #EAF6F5;
@@ -455,7 +409,6 @@
   .ai-section .wrap { position: relative; z-index: 1; }
   .ai-section .section-head h2 { color: #fff; }
   .ai-section .section-head p { color: #B9D6D3; }
-
   .ai-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -486,10 +439,7 @@
     line-height: 1.6;
   }
   .ai-card p { font-size: 0.8rem; color: #A8C7C4; margin: 0; }
-
   .ai-cta { text-align: center; margin-top: 52px; }
-
-  /* ===== FAQ ===== */
   .faq-list { border-top: 1px solid var(--border); }
   .faq-item { border-bottom: 1px solid var(--border); }
   .faq-q {
@@ -528,8 +478,6 @@
     font-size: 0.92rem;
     max-width: 66ch;
   }
-
-  /* ===== Contact ===== */
   .contact-section {
     background: var(--ink);
     color: #fff;
@@ -550,7 +498,6 @@
     margin-bottom: 56px;
   }
   .contact-ctas .btn { padding: 16px 30px; font-size: 0.92rem; }
-
   .contact-info {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -571,8 +518,6 @@
     margin-bottom: 8px;
   }
   .contact-info .val { font-size: 0.9rem; color: #EDEFF5; }
-
-  /* ===== Footer ===== */
   footer {
     background: #141F33;
     color: #8C97AE;
@@ -587,13 +532,9 @@
     gap: 12px;
   }
   footer a:hover { color: #fff; }
-
-  /* ===== Mobile sticky CTA bar ===== */
   .mobile-cta-bar {
     display: none;
   }
-
-  /* ===== Reveal on scroll ===== */
   .reveal {
     opacity: 0;
     transform: translateY(18px);
@@ -603,19 +544,15 @@
     opacity: 1;
     transform: translateY(0);
   }
-
-  /* ===== Responsive ===== */
   @media (max-width: 980px) {
     .hero-grid { grid-template-columns: 1fr; }
     .pain-grid { grid-template-columns: repeat(2, 1fr); }
     .service-grid { grid-template-columns: repeat(2, 1fr); }
     .ai-grid { grid-template-columns: repeat(2, 1fr); }
-    .staff-lead { grid-template-columns: 1fr; }
     .team-bar { grid-template-columns: 1fr; }
     .contact-info { grid-template-columns: repeat(2, 1fr); }
     .nav-links { display: none; }
   }
-
   @media (max-width: 640px) {
     .wrap { padding: 0 20px; }
     section { padding: 68px 0; }
@@ -657,8 +594,6 @@
 </style>
 </head>
 <body>
-
-<!-- ===================== HEADER ===================== -->
 <header class="site-header">
   <div class="wrap">
     <div class="brand">
@@ -680,28 +615,23 @@
     </div>
   </div>
 </header>
-
-<!-- ===================== HERO ===================== -->
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
       <p class="eyebrow">奈良県桜井市 / 創業1993年 / IT・OA機器サポート</p>
       <h1>33年の<span class="accent">信頼</span>と<span class="accent">実績</span>。</h1>
       <p class="lead">パソコン・コピー機・ネットワークからAIまで。<br>中小企業・病院・クリニックのITを、ワンストップでサポートします。</p>
-
       <div class="timeline" aria-hidden="true"></div>
       <div class="timeline-labels">
         <span>1993 創業</span>
         <span class="now">2026 現在 ―― 33年</span>
       </div>
-
       <div class="hero-ctas" style="margin-top:38px;">
         <a href="tel:09034964516" class="btn btn-gold">📞 電話する</a>
         <a href="#contact" class="btn btn-outline">💬 LINE相談</a>
         <a href="#contact" class="btn btn-outline">✉ お問い合わせ</a>
       </div>
     </div>
-
     <div class="hero-panel">
       <p class="eyebrow on-dark">TRUST TIMELINE</p>
       <div class="num">33<span style="font-size:1.6rem;">年</span></div>
@@ -715,15 +645,12 @@
     </div>
   </div>
 </section>
-
-<!-- ===================== WORRIES ===================== -->
 <section id="worries" class="section-alt">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">SUCH TROUBLES?</p>
       <h2>こんなお悩みありませんか？</h2>
     </div>
-
     <div class="pain-grid reveal">
       <div class="pain-item"><span class="pain-icon">🖥️</span><p>パソコンが遅い・故障した</p></div>
       <div class="pain-item"><span class="pain-icon">🖨️</span><p>コピー機のコストを見直したい</p></div>
@@ -732,19 +659,15 @@
       <div class="pain-item"><span class="pain-icon">🤖</span><p>AIを業務に活用したい</p></div>
       <div class="pain-item"><span class="pain-icon">🧑‍💼</span><p>IT担当者がいない</p></div>
     </div>
-
     <p class="pain-close reveal">そのお悩み、<strong>ワイズシステムサービス</strong>がまとめて解決します。</p>
   </div>
 </section>
-
-<!-- ===================== REASONS ===================== -->
 <section id="reasons">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">WHY US</p>
       <h2>選ばれる5つの理由</h2>
     </div>
-
     <div class="reasons reveal">
       <div class="reason-row">
         <div class="reason-num">01</div>
@@ -769,15 +692,12 @@
     </div>
   </div>
 </section>
-
-<!-- ===================== SERVICES ===================== -->
 <section id="services" class="section-alt">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">SERVICES</p>
       <h2>サービス一覧</h2>
     </div>
-
     <div class="service-grid reveal">
       <div class="service-card"><div class="service-icon">💻</div><h3>パソコン販売・設定</h3><p>新品・中古の選定から初期設定まで対応します。</p></div>
       <div class="service-card"><div class="service-icon">🖨️</div><h3>コピー機・複合機</h3><p>コストとスペック、両面から最適な機種をご提案。</p></div>
@@ -787,28 +707,22 @@
       <div class="service-card"><div class="service-icon">🌍</div><h3>ホームページ制作</h3><p>会社・店舗の魅力を伝えるサイトを制作します。</p></div>
       <div class="service-card"><div class="service-icon">📈</div><h3>MEO対策</h3><p>Googleマップでの集客力向上を支援します。</p></div>
       <div class="service-card"><div class="service-icon">🤖</div><h3>AI導入支援</h3><p>業務にAIを取り入れるところから伴走します。</p></div>
+      <div class="service-card"><div class="service-icon">🤝</div><h3>営業代行</h3><p>新規開拓やアポイント獲得など、営業活動を代行いたします。</p></div>
       <div class="service-card"><div class="service-icon">🎁</div><h3>電化製品・オフィス家具・ギフト</h3><p>家電やオフィス家具、ギフト用品の販売も承っております。</p></div>
     </div>
   </div>
 </section>
-
-<!-- ===================== STAFF ===================== -->
 <section id="staff">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">OUR TEAM</p>
       <h2>サポート体制</h2>
     </div>
-
     <div class="staff-lead reveal">
-      <div class="staff-photo-placeholder">代表者写真<br>差し替え用プレースホルダー</div>
-      <div>
-        <p class="staff-quote">「地域の皆様の“困った”に、いちばん近い場所で応える会社でありたい。」</p>
-        <p class="staff-name">代表取締役　山本 貫太</p>
-        <p class="staff-role">1993年の創業以来、奈良県桜井市を拠点に地域のIT環境を支えてまいりました。</p>
-      </div>
+      <p class="staff-quote">「地域の皆様の“困った”に、いちばん近い場所で応える会社でありたい。」</p>
+      <p class="staff-name">代表取締役　山本 貫太</p>
+      <p class="staff-role">1993年の創業以来、奈良県桜井市を拠点に地域のIT環境を支えてまいりました。</p>
     </div>
-
     <div class="team-bar reveal">
       <div class="team-bar-item">
         <span class="team-bar-icon">🧑‍💼</span>
@@ -825,8 +739,6 @@
     </div>
   </div>
 </section>
-
-<!-- ===================== AI SERVICES ===================== -->
 <section id="ai" class="ai-section">
   <div class="wrap">
     <div class="section-head reveal">
@@ -834,7 +746,6 @@
       <h2>AIサービス</h2>
       <p style="margin-top:14px;">33年のIT実績を土台に、新たに始まった取り組みです。</p>
     </div>
-
     <div class="ai-grid reveal">
       <div class="ai-card">
         <p class="tag">01</p>
@@ -857,21 +768,17 @@
         <p>社内でAIを使いこなすための研修を行います。</p>
       </div>
     </div>
-
     <div class="ai-cta reveal">
       <a href="#contact" class="btn btn-ai">🤖 AIについて相談する</a>
     </div>
   </div>
 </section>
-
-<!-- ===================== FAQ ===================== -->
 <section id="faq" class="section-alt">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">FAQ</p>
       <h2>よくある質問</h2>
     </div>
-
     <div class="faq-list reveal">
       <details class="faq-item">
         <summary class="faq-q"><span><span class="q-mark">Q.</span> パソコン1台からでも大丈夫？</span><span class="plus">＋</span></summary>
@@ -892,22 +799,18 @@
     </div>
   </div>
 </section>
-
-<!-- ===================== CONTACT ===================== -->
 <section id="contact" class="contact-section">
   <div class="wrap">
     <div class="contact-inner">
       <p class="eyebrow">CONTACT</p>
       <h2>まずはお気軽にご相談ください。</h2>
       <p>パソコン1台のご相談から、AI導入のご相談まで。<br>どんな内容でも、まずはお話をお聞かせください。</p>
-
       <div class="contact-ctas">
         <a href="tel:09034964516" class="btn btn-gold">📞 電話する</a>
         <a href="#" class="btn btn-ai-outline">💬 LINEで相談</a>
         <a href="#" class="btn btn-ai-outline">✉ お問い合わせフォーム</a>
       </div>
     </div>
-
     <div class="contact-info reveal">
       <div><p class="label">TEL</p><p class="val">090-3496-4516</p></div>
       <div><p class="label">受付時間</p><p class="val">平日 09:00–17:00</p></div>
@@ -916,24 +819,18 @@
     </div>
   </div>
 </section>
-
-<!-- ===================== FOOTER ===================== -->
 <footer>
   <div class="wrap">
     <span>Copyright © ワイズシステムサービス</span>
     <a href="https://yzsystemservice.com/privacy">プライバシーポリシー</a>
   </div>
 </footer>
-
-<!-- ===================== MOBILE STICKY CTA ===================== -->
 <div class="mobile-cta-bar">
   <a href="tel:09034964516" class="primary">📞<br>電話</a>
   <a href="#" class="line">💬<br>LINE</a>
   <a href="#contact" class="form">✉<br>問い合わせ</a>
 </div>
-
 <script>
-  // スクロール表示アニメーション
   const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -945,6 +842,5 @@
   }, { threshold: 0.12 });
   reveals.forEach(el => io.observe(el));
 </script>
-
 </body>
 </html>

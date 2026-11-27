@@ -584,3 +584,23 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 @keyframes trim-in { from { opacity: 0; transform: scale(1.6); } to { opacity: 1; transform: none; } }
 @keyframes bar-in { from { transform: scaleY(0); } to { transform: none; } }
+
+/* ---------- ロゴ・イラスト・アイコン ---------- */
+.brand-logo { height: 40px; width: auto; }
+.footer-info .brand-logo { height: 44px; }
+@media (max-width: 420px) {
+  .brand-logo { height: 32px; }
+}
+.hero-illust { grid-column: 1 / -1; margin: 0; padding-top: 8px; }
+.hero-illust img { width: 100%; height: auto; }
+.biz-head { display: flex; align-items: flex-start; gap: 16px; }
+.biz-icon { flex-shrink: 0; width: 56px; height: 56px; }
+.group-icon { display: inline-block; vertical-align: -12px; width: 52px; height: 52px; margin-right: 14px; }
+@media (max-width: 560px) {
+  .biz-icon { width: 44px; height: 44px; }
+  .group-icon { width: 40px; height: 40px; vertical-align: -8px; margin-right: 10px; }
+}
+@media (max-width: 560px) {
+  .hero-illust { overflow: hidden; margin: 0 calc(-1 * clamp(24px, 5vw, 72px)); }
+  .hero-illust img { width: 165%; max-width: none; margin-left: -18%; }
+}
